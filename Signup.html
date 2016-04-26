@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Aditya Shibrady">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>The Online Mobile Store</title>
+
+	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/validateUser.js"></script>
+</head>
+<body style="background-color: #e3e0cf"><center><br>
+<div class="navbar-wrapper">
+    <div class="container">
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index.html">Online Mobile Store</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./login.php">Login</a></li>
+                        <li class="active"><a href="./Signup.html">Register</a></li>
+                        <li><a href="./ViewProduct.php">Products</a></li>
+                        <li><a href="./MyCart.php">My Cart</a></li>
+                        <li><a href="./Logout.php">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+	<div align="center" id="main">
+		<div id="error"></div><br><h2>Register Here</h2><br>
+		<form id="registerform" method="post" action="registeruser.php">
+			<fieldset style="width: 400px">
+				<table>
+					<tbody>
+						<tr>
+							<td>Email ID</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="text" name="email" id="email"></td>
+						</tr>
+						<tr>
+							<td>First Name</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="text" name="fname" id="fname"></td>
+						</tr>
+						<tr>
+							<td>Last Name</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="text" name="lname" id="lname"></td>
+						</tr>
+						<tr>
+							<td>Gender</td>
+							<td><select style="background-color: #c5d5cb" class="form-control" id="gender" name="gender"><option
+										value="M">Male</option>
+									<option value="F">Female</option></select><input type="hidden"
+								name="genderval" id="genderval" /></td>
+						</tr>
+						<tr>
+							<td>Phone Number</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="text" name="phnumber" id="phnumber"
+								maxlength="10"></td>
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td><textarea style="background-color: #c5d5cb" class="form-control" rows="2" cols="10" name="address" id="address"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>City</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="text" name="city" id="city"></td>
+						</tr>
+						<tr>
+							<td>State</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="text" name="state" id="state"></td>
+						</tr>
+						<tr>
+							<td>Zip Code</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="text" name="zipcode" id="zipcode"></td>
+						</tr>
+						<tr>
+							<td>Password</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="password" name="password" id="password"></td>
+						</tr>
+						<tr>
+							<td>Confirm Password</td>
+							<td><input style="background-color: #c5d5cb" class="form-control" type="password" name="cpassword" id="cpassword"></td>
+						</tr>
+
+					</tbody>
+				</table>
+                <br>
+                <button type="button" class="btn btn-xs btn-success" value="Signup"
+                        onclick="validateForm()" />Signup</button>
+			</fieldset>
+		</form>
+	</div>
+    </center>
+
+</body>
+</html>
